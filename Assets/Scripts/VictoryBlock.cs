@@ -12,16 +12,7 @@ public class VictoryBlock : Block
     {
         remainingBlocks++;
     }
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     protected override void OnCollisionEnter(Collision collision)
     {
