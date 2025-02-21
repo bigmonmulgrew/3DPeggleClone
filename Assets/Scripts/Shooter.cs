@@ -12,7 +12,7 @@ public class Shooter : MonoBehaviour
     [Header("Indicator Settings")]
     [SerializeField] GameObject indicatorPrefab;
     [Range(0,5.0f)]
-    [SerializeField] float indicatorInterval = 0.5f;
+    [SerializeField] float indicatorInterval = 0.3f;
     [Range(0, 5.0f)]
     [SerializeField] float indicatorDisplay = 2.0f;
 
@@ -42,8 +42,6 @@ public class Shooter : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Waiting for " + indicatorInterval + " seconds...");
-
             // Wait first before checking again
             yield return new WaitForSeconds(indicatorInterval);
 
