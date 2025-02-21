@@ -66,9 +66,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 1
   far clip plane: 1000
-  field of view: 60
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -109,6 +109,8 @@ MonoBehaviour:
   power: 25
   balls: 3
   ballPrefab: {fileID: 5618689369111175724, guid: 3eefc8f4337486f4ea33557c9bc02f92, type: 3}
+  indicatorPrefab: {fileID: 5618689369111175724, guid: a494c72fd60b3d8449c8d7d88c60fc58, type: 3}
+  indicatorInterval: 0.2
 --- !u!114 &6339527565664227883
 MonoBehaviour:
   m_ObjectHideFlags: 0

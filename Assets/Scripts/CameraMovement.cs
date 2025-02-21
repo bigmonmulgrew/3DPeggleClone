@@ -7,8 +7,8 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] float minPitch = -180f; // Minimum downward tilt (downward limit)
     [SerializeField] float maxPitch = 0f;   // Maximum tilt (horizontal, no looking up)
 
-    float yaw = 0f;     // Declare here to prevent declaring every frame.
-    float pitch = 0f;   // Declare here to prevent declaring every frame.
+    float yaw = 0f;     // Here so we dont have to get the value from the camera each frame
+    float pitch = 90.0f;
 
     void Start()
     {

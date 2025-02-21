@@ -6,6 +6,8 @@ public class Goal : MonoBehaviour
 {
     [SerializeField] int score;
 
+    [SerializeField] GameObject textUI;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ball"))
@@ -13,6 +15,7 @@ public class Goal : MonoBehaviour
             if(VictoryBlock.remainingBlocks <= 0)
             {
                 Debug.Log("Victory");
+                textUI.SetActive(true);
             }
         }
         Destroy(other.gameObject);

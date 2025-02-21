@@ -8,8 +8,10 @@ public class Block : MonoBehaviour
     [SerializeField] float points = 5.0f;
     protected virtual void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
-        StartCoroutine(DestroyBlock());
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            StartCoroutine(DestroyBlock());
+        }
     }
 
     IEnumerator DestroyBlock()
